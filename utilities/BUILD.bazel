@@ -21,7 +21,7 @@ go_test(
 )
 
 alias(
-    name = ":utilities",
+    name = "utilities",
     actual = ":go_default_library",
     visibility = ["//visibility:public"],
 )
