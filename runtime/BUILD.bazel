@@ -83,3 +83,9 @@ go_test(
         "@org_golang_google_grpc//status:go_default_library",
     ],
 )
+
+alias(
+    name = "runtime",
+    actual = ":go_default_library",
+    visibility = ["//visibility:public"],
+)
