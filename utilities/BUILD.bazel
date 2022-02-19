@@ -19,3 +19,9 @@ go_test(
     srcs = ["trie_test.go"],
     embed = [":go_default_library"],
 )
+
+alias(
+    name = ":utilities",
+    actual = ":go_default_library",
+    visibility = ["//visibility:public"],
+)
